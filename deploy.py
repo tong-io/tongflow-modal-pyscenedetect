@@ -35,7 +35,7 @@ image = (
     )
 )
 app = modal.App(Path(__file__).resolve().parent.name, image=image)
-secrets = modal.Secret.from_name("OPENAPI")
+secrets = modal.Secret.from_dict({})
 
 # Logging setup
 logging.basicConfig(
