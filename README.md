@@ -1,6 +1,6 @@
 # tongflow-modal-pyscenedetect
 
-Official TongFlow plugin. Shot-boundary detection with **PySceneDetect**, running on [Modal](https://modal.com). No model weights — splits a long video into segments by scene.
+Official [TongFlow](https://github.com/tong-io/tongflow) plugin. Shot-boundary detection with **PySceneDetect**, running on [Modal](https://modal.com). No model weights — splits a long video into segments by scene.
 
 ## Capabilities
 
