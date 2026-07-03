@@ -1,0 +1,41 @@
+{
+    "env": [
+        {
+            "key": "MODAL_TOKEN_ID",
+            "required": true,
+            "description": "Modal token id",
+            "url": "https://modal.com/settings/tokens"
+        },
+        {
+            "key": "MODAL_TOKEN_SECRET",
+            "required": true,
+            "description": "Modal token secret (paired with MODAL_TOKEN_ID)"
+        },
+        {
+            "key": "TONGFLOW_MODAL_CALL_TIMEOUT_S",
+            "default": "2400",
+            "description": "Max seconds to wait for a Modal call"
+        },
+        {
+            "key": "R2_ENDPOINT",
+            "description": "Cloudflare R2 endpoint for large outputs (optional)"
+        },
+        {
+            "key": "R2_BUCKET",
+            "description": "R2 bucket name"
+        },
+        {
+            "key": "R2_ACCESS_KEY_ID",
+            "description": "R2 access key id"
+        },
+        {
+            "key": "R2_SECRET_ACCESS_KEY",
+            "description": "R2 secret access key"
+        },
+        {
+            "key": "R2_REGION",
+            "default": "auto",
+            "description": "R2 region"
+        }
+    ]
+}
