@@ -1,4 +1,9 @@
 {
+    "plugin": {
+        "name": "PySceneDetect",
+        "description": "Shot-boundary detection — split a long video into segments at detected scene cuts.",
+        "icon": "/plugins/tongflow-modal-pyscenedetect.svg"
+    },
     "env": [
         {
             "key": "MODAL_TOKEN_ID",
