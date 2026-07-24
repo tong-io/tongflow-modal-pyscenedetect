@@ -29,7 +29,7 @@ image = (
     modal.Image.debian_slim(python_version="3.13")
     .apt_install("ffmpeg")
     .uv_pip_install(
-        "tongflow==0.2.13", "fastapi[standard]",
+        "tongflow==0.2.16", "fastapi[standard]",
         "scenedetect[opencv]",
         "boto3",
     )
