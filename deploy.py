@@ -256,7 +256,7 @@ def _split_video_core(task: dict) -> dict:
         raise
 
 
-@app.function(cpu=1.0, memory=2048, timeout=3600, secrets=[secrets], scaledown_window=5)
+@app.function(cpu=1.0, memory=2048, timeout=3600, secrets=[secrets], scaledown_window=2)
 def split_video(task: dict) -> dict:
     return _split_video_core(task)
 
@@ -333,7 +333,7 @@ from tongflow.slots import node_slot
 
 
 @deploy
-@app.cls(cpu=1.0, memory=2048, timeout=3600, secrets=[secrets], scaledown_window=5)
+@app.cls(cpu=1.0, memory=2048, timeout=3600, secrets=[secrets], scaledown_window=2)
 class Inference:
     @modal.method()
     @node_slot(NodeSlots.SPLIT_VIDEO)
